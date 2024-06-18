@@ -117,7 +117,6 @@ combo_##NAME { \
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)
-
         // COMBO(UML_AE, &kp SQT , 11 12, 0)
         // COMBO(UML_OE, &kp SEMI, 12 13, 0)
         // COMBO(UML_UE, &kp LBKT, 10 11, 0)
@@ -133,7 +132,7 @@ combo_##NAME { \
                 <&kp Q>,
                 <&macro_release>,
                 <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp U>;
 
             label = "MACRO_QU";
@@ -147,7 +146,7 @@ combo_##NAME { \
                 <&kp W>,
                 <&macro_release>,
                 <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp H>;
 
             label = "WH";
@@ -161,7 +160,7 @@ combo_##NAME { \
                 <&kp T>,
                 <&macro_release>,
                 <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
-                <&macro_press>,
+                <&macro_tap>,
                 <&kp H>;
 
             label = "TH";
@@ -172,6 +171,146 @@ combo_##NAME { \
             #binding-cells = <0>;
             bindings = <&kp I &kp N &kp G>;
             label = "ING";
+        };
+
+        ch: ch {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp H>;
+
+            label = "CH";
+        };
+
+        sh: sh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp H>;
+
+            label = "SH";
+        };
+
+        ck: ck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp K>;
+
+            label = "CK";
+        };
+
+        gh: gh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp G>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp H>;
+
+            label = "GH";
+        };
+
+        ou: ou {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp U>;
+
+            label = "OU";
+        };
+
+        ion: ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp O &kp N>;
+
+            label = "ION";
+        };
+
+        ess: ess {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp S &kp S>;
+
+            label = "ESS";
+        };
+
+        est: est {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp S &kp T>;
+
+            label = "EST";
+        };
+
+        ist: ist {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp S &kp T>;
+
+            label = "IST";
+        };
+
+        able: able {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_tap>,
+                <&kp B &kp L &kp E>;
+
+            label = "ABLE";
         };
     };
 
@@ -241,7 +380,7 @@ combo_##NAME { \
             bindings = <
 &kp Q      &kp ESC    &kp LC(B)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
 &kp TAB    &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp ENTER
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp N   &kp LBKT        &kp RBKT         &kp BSLH
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
                       &trans     &trans  &kp BACKSPACE  &trans  &trans  &trans
             >;
 

@@ -65,15 +65,55 @@ combo_##NAME { \
         combo_esc {
             timeout-ms = <50>;
             layers = <0>;
-            key-positions = <10 1>;
+            key-positions = <1 2>;
             bindings = <&kp ESC>;
         };
 
         combo_tab {
             timeout-ms = <50>;
             layers = <0>;
-            key-positions = <20 21>;
+            key-positions = <23 24>;
             bindings = <&kp TAB>;
+        };
+
+        combo_settings_left {
+            bindings = <&mo 4>;
+            key-positions = <30 31>;
+        };
+
+        combo_settings_right {
+            bindings = <&mo 4>;
+            key-positions = <35 34>;
+        };
+
+        combo_capsword {
+            bindings = <&caps_word>;
+            key-positions = <22 21>;
+        };
+
+        combo_enter {
+            bindings = <&kp RS(LS(ENTER))>;
+            key-positions = <27 26>;
+        };
+
+        combo_quote {
+            bindings = <&kp APOS>;
+            key-positions = <8 7>;
+        };
+
+        combo_wh {
+            bindings = <&wh>;
+            key-positions = <1 16>;
+        };
+
+        combo_th {
+            bindings = <&th>;
+            key-positions = <12 13>;
+        };
+
+        combo_ing {
+            bindings = <&ing>;
+            key-positions = <18 17>;
         };
 
         COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)
@@ -85,33 +125,53 @@ combo_##NAME { \
     };
 
     macros {
-        snip: snip {
+        qu: macro_qu {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp LSHFT &kp LEFT_GUI>,
                 <&macro_tap>,
-                <&kp S>,
+                <&kp Q>,
                 <&macro_release>,
-                <&kp LSHIFT &kp LEFT_GUI>;
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_press>,
+                <&kp U>;
 
-            label = "SNIP";
+            label = "MACRO_QU";
         };
 
-        macro_shiftable_sch: macro_shiftable_sch {
-            label = "Macro_shiftable_sch";
+        wh: wh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&kp S>,
+                <&kp W>,
                 <&macro_release>,
-                <&kp LSHIFT>,
-                <&macro_tap>,
-                <&kp C &kp H>;
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_press>,
+                <&kp H>;
 
-            tap-ms = <10>;
+            label = "WH";
+        };
+
+        th: th {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp T>,
+                <&macro_release>,
+                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&macro_press>,
+                <&kp H>;
+
+            label = "TH";
+        };
+
+        ing: ing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp I &kp N &kp G>;
+            label = "ING";
         };
     };
 
@@ -124,10 +184,10 @@ combo_##NAME { \
 
         BASE_LAYER {
             bindings = <
-&kp Q  &kp W       &kp F        &kp P        &kp B                &kp J        &kp L        &kp U        &kp Y       &kp SEMI
-&kp A  &mt LALT R  &hl LCTRL S  &hl LSHFT T  &kp G                &kp M        &hr RSHFT N  &hr RCTRL E  &mt LALT I  &kp O
-&kp Z  &kp X       &kp C        &kp D        &kp V                &kp K        &kp H        &kp COMMA    &kp DOT     &kp FSLH
-                   &mo 3        &mo 1        &mt LSHFT BACKSPACE  &lt 5 SPACE  &mo 2        &mo 0
+&qu    &kp W  &kp F  &kp P  &kp B                &kp J        &kp L  &kp U      &kp Y    &kp SEMI
+&kp A  &kp R  &kp S  &kp T  &kp G                &kp M        &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D  &kp V                &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH
+              &mo 3  &mo 1  &mt LSHFT BACKSPACE  &lt 5 SPACE  &mo 2  &mo 4
             >;
 
             label = "Base";
@@ -146,7 +206,7 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp SPACE
 &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SPACE
 &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
                       &trans     &trans     &trans     &trans     &trans     &trans

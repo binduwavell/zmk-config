@@ -92,7 +92,7 @@ combo_##NAME { \
         };
 
         combo_enter {
-            bindings = <&kp RS(LS(ENTER))>;
+            bindings = <&kp ENTER>;
             key-positions = <27 26>;
         };
 
@@ -114,6 +114,56 @@ combo_##NAME { \
         combo_ing {
             bindings = <&ing>;
             key-positions = <18 17>;
+        };
+
+        combo_ch {
+            bindings = <&ch>;
+            key-positions = <22 16>;
+        };
+
+        combo_sh {
+            bindings = <&sh>;
+            key-positions = <16 12>;
+        };
+
+        combo_ck {
+            bindings = <&ck>;
+            key-positions = <16 2>;
+        };
+
+        combo_gh {
+            bindings = <&gh>;
+            key-positions = <16 13>;
+        };
+
+        combo_ou {
+            bindings = <&ou>;
+            key-positions = <19 18>;
+        };
+
+        combo_ion {
+            bindings = <&ion>;
+            key-positions = <18 16>;
+        };
+
+        combo_ess {
+            bindings = <&ess>;
+            key-positions = <16 12>;
+        };
+
+        combo_est {
+            bindings = <&est>;
+            key-positions = <16 13>;
+        };
+
+        combo_ist {
+            bindings = <&ist>;
+            key-positions = <13 17>;
+        };
+
+        combo_able {
+            bindings = <&able>;
+            key-positions = <10 13>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

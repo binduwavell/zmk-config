@@ -314,7 +314,7 @@ combo_##NAME { \
                 <&macro_tap>,
                 <&kp E>,
                 <&macro_release>,
-                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&kp LSHIFT &kp RSHIFT>,
                 <&macro_tap>,
                 <&kp S &kp S>;
 
@@ -328,7 +328,7 @@ combo_##NAME { \
                 <&macro_tap>,
                 <&kp E>,
                 <&macro_release>,
-                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&kp LSHIFT &kp RSHIFT>,
                 <&macro_tap>,
                 <&kp S &kp T>;
 
@@ -342,7 +342,7 @@ combo_##NAME { \
                 <&macro_tap>,
                 <&kp I>,
                 <&macro_release>,
-                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&kp LSHIFT &kp RSHIFT>,
                 <&macro_tap>,
                 <&kp S &kp T>;
 
@@ -356,7 +356,7 @@ combo_##NAME { \
                 <&macro_tap>,
                 <&kp A>,
                 <&macro_release>,
-                <&kp LC(LSHIFT) &kp LC(RSHIFT)>,
+                <&kp LSHIFT &kp RSHIFT>,
                 <&macro_tap>,
                 <&kp B &kp L &kp E>;
 

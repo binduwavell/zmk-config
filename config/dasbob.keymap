@@ -72,7 +72,7 @@ combo_##NAME { \
         combo_tab {
             timeout-ms = <50>;
             layers = <0>;
-            key-positions = <23 24>;
+            key-positions = <23 22>;
             bindings = <&kp TAB>;
         };
 
@@ -148,17 +148,17 @@ combo_##NAME { \
 
         combo_ess {
             bindings = <&ess>;
-            key-positions = <16 12>;
+            key-positions = <12 17>;
         };
 
         combo_est {
             bindings = <&est>;
-            key-positions = <16 13>;
+            key-positions = <13 17>;
         };
 
         combo_ist {
             bindings = <&ist>;
-            key-positions = <13 17>;
+            key-positions = <13 18>;
         };
 
         combo_able {

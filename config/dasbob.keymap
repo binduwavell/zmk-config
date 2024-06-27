@@ -293,20 +293,6 @@ combo_##NAME { \
             label = "OU";
         };
 
-        ion: ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_tap>,
-                <&kp I>,
-                <&macro_release>,
-                <&kp LSHIFT &kp RSHIFT>,
-                <&macro_tap>,
-                <&kp O &kp N>;
-
-            label = "ION";
-        };
-
         ess: ess {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -361,6 +347,20 @@ combo_##NAME { \
                 <&kp B &kp L &kp E>;
 
             label = "ABLE";
+        };
+
+        ion: ion {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LSHIFT &kp RSHIFT>,
+                <&macro_tap>,
+                <&kp O &kp N>;
+
+            label = "ION";
         };
     };
 

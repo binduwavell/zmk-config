@@ -141,11 +141,6 @@ combo_##NAME { \
             key-positions = <19 18>;
         };
 
-        combo_ion {
-            bindings = <&ion>;
-            key-positions = <18 16>;
-        };
-
         combo_ess {
             bindings = <&ess>;
             key-positions = <12 17>;
@@ -164,6 +159,11 @@ combo_##NAME { \
         combo_able {
             bindings = <&able>;
             key-positions = <10 13>;
+        };
+
+        comb_ion {
+            bindings = <&ion>;
+            key-positions = <18 16>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

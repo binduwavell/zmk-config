@@ -57,6 +57,16 @@ combo_##NAME { \
 
             hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
         };
+        qbmt: quick_balanced_mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "quick balanced mod tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
+            hold-while-undecided;
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     combos {
@@ -373,10 +383,10 @@ combo_##NAME { \
 
         ALPHA1_LAYER {
             bindings = <
-&qu    &kp W  &kp F  &kp P  &kp B                &kp J        &kp L  &kp U      &kp Y    &kp SEMI
-&kp A  &kp R  &kp S  &kp T  &kp G                &kp M        &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V                &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH
-              &mo 4  &mo 2  &mt LSHFT BACKSPACE  &lt 1 SPACE  &mo 3  &mo 5
+&qu    &kp W  &kp F  &kp P  &kp B                  &kp J        &kp L  &kp U      &kp Y    &kp SEMI
+&kp A  &kp R  &kp S  &kp T  &kp G                  &kp M        &kp N  &kp E      &kp I    &kp O
+&kp Z  &kp X  &kp C  &kp D  &kp V                  &kp K        &kp H  &kp COMMA  &kp DOT  &kp FSLH
+              &mo 4  &mo 2  &qbmt LSHFT BACKSPACE  &lt 1 SPACE  &mo 3  &mo 5
             >;
 
             label = "alp1";

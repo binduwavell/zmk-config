@@ -397,7 +397,7 @@ combo_##NAME { \
             bindings = <
 &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp FSLH      &kp N7   &kp N8  &kp N9  &kp MINUS
 &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp EQUAL     &kp N4   &kp N5  &kp N6  &kp LS(UNDER)
-&kp GRAVE      &kp SPACE     &kp SPACE      &kp SPACE     &kp SPACE      &kp LS(STAR)  &kp N1   &kp N2  &kp N3  &kp LS(PLUS)
+&kp GRAVE      &trans        &trans         &trans        &trans         &kp LS(STAR)  &kp N1   &kp N2  &kp N3  &kp LS(PLUS)
                              &trans         &trans        &trans         &kp N0        &kp DOT  &trans
             >;
 
@@ -406,10 +406,10 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp SPACE
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SPACE
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE
-                      &trans     &trans     &trans     &trans     &trans     &trans
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &kp SPACE
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &kp SPACE
+&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LS(LC(TAB))  &kp LC(TAB)  &kp SPACE  &kp SPACE
+                      &trans     &trans     &trans     &trans     &trans           &trans
             >;
 
             label = "navi";

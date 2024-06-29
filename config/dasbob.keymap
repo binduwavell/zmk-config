@@ -406,10 +406,10 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &kp SPACE
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &kp SPACE
-&kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp LS(LC(TAB))  &kp LC(TAB)  &kp SPACE  &kp SPACE
-                      &trans     &trans     &trans     &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
+                &trans  &trans  &trans  &trans     &trans           &trans
             >;
 
             label = "navi";

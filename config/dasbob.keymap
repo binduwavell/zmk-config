@@ -62,7 +62,9 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "quick balanced layer tap";
             #binding-cells = <2>;
+
             // flavor = "balanced";
+
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <100>;
@@ -187,6 +189,11 @@ combo_##NAME { \
         comb_ion {
             bindings = <&ion>;
             key-positions = <18 16>;
+        };
+
+        combo_mods {
+            bindings = <&mo 4>;
+            key-positions = <32 33>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)
@@ -429,10 +436,10 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
-                &trans  &trans  &trans  &trans     &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN        &kp PG_UP    &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
+                &trans  &trans  &trans  &trans    &trans           &trans
             >;
 
             label = "navi";

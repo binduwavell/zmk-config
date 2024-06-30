@@ -103,12 +103,12 @@ combo_##NAME { \
 
         combo_settings_left {
             bindings = <&mo 5>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
         };
 
         combo_settings_right {
             bindings = <&mo 5>;
-            key-positions = <36 37>;
+            key-positions = <36 35>;
         };
 
         combo_capsword {
@@ -403,10 +403,10 @@ combo_##NAME { \
 
         ALPHA1_LAYER {
             bindings = <
-&qu    &kp W  &kp F  &kp P  &kp B                  &kp J         &kp L  &kp U      &kp Y    &kp SEMI
-&kp A  &kp R  &kp S  &kp T  &kp G                  &kp M         &kp N  &kp E      &kp I    &kp O
-&kp Z  &kp X  &kp C  &kp D  &kp V                  &kp K         &kp H  &kp COMMA  &kp DOT  &kp FSLH
-&none  &none  &mo 4  &mo 2  &qbmt LSHFT BACKSPACE  &qlt 1 SPACE  &mo 3  &mo 5      &none    &none
+&qu    &kp W  &kp F        &kp P  &kp B                  &kp J         &kp L  &kp U        &kp Y    &kp SEMI
+&kp A  &kp R  &kp S        &kp T  &kp G                  &kp M         &kp N  &kp E        &kp I    &kp O
+&kp Z  &kp X  &kp C        &kp D  &kp V                  &kp K         &kp H  &kp COMMA    &kp DOT  &kp FSLH
+&none  &none  &key_repeat  &mo 2  &qbmt LSHFT BACKSPACE  &qlt 1 SPACE  &mo 3  &key_repeat  &none    &none
             >;
 
             label = "alp1";
@@ -436,10 +436,10 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
-&none   &none   &trans  &trans  &trans  &trans     &trans           &trans       &none      &none
+&trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN        &kp PG_UP    &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
+&none   &none   &trans  &trans  &trans  &trans    &trans           &trans       &none      &none
             >;
 
             label = "navi";

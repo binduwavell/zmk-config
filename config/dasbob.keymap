@@ -33,7 +33,7 @@ combo_##NAME { \
 
             // opposite side hand keys
 
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 31 32 33 34 35>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 32 33 34 35 36 37>;
         };
 
         hr: homerow_mods_right {
@@ -55,7 +55,7 @@ combo_##NAME { \
 
             // opposite side hand keys
 
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32 33 34 35>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 32 33 34 35 36 37>;
         };
 
         qlt: quick_layer_tap {
@@ -103,12 +103,12 @@ combo_##NAME { \
 
         combo_settings_left {
             bindings = <&mo 5>;
-            key-positions = <30 31>;
+            key-positions = <32 33>;
         };
 
         combo_settings_right {
             bindings = <&mo 5>;
-            key-positions = <35 34>;
+            key-positions = <36 37>;
         };
 
         combo_capsword {
@@ -193,7 +193,7 @@ combo_##NAME { \
 
         combo_mods {
             bindings = <&mo 4>;
-            key-positions = <32 33>;
+            key-positions = <34 35>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)
@@ -406,7 +406,7 @@ combo_##NAME { \
 &qu    &kp W  &kp F  &kp P  &kp B                  &kp J         &kp L  &kp U      &kp Y    &kp SEMI
 &kp A  &kp R  &kp S  &kp T  &kp G                  &kp M         &kp N  &kp E      &kp I    &kp O
 &kp Z  &kp X  &kp C  &kp D  &kp V                  &kp K         &kp H  &kp COMMA  &kp DOT  &kp FSLH
-              &mo 4  &mo 2  &qbmt LSHFT BACKSPACE  &qlt 1 SPACE  &mo 3  &mo 5
+&none  &none  &mo 4  &mo 2  &qbmt LSHFT BACKSPACE  &qlt 1 SPACE  &mo 3  &mo 5      &none    &none
             >;
 
             label = "alp1";
@@ -417,7 +417,7 @@ combo_##NAME { \
 &kp Q      &kp ESC    &kp LC(B)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
 &kp TAB    &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp ENTER
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
-                      &trans     &trans  &kp BACKSPACE  &trans  &trans  &trans
+&none      &none      &trans     &trans  &kp BACKSPACE  &trans  &trans  &trans          &none            &none
             >;
 
             label = "alp2";
@@ -428,7 +428,7 @@ combo_##NAME { \
 &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp FSLH      &kp N7   &kp N8  &kp N9  &kp MINUS
 &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp EQUAL     &kp N4   &kp N5  &kp N6  &kp LS(UNDER)
 &kp GRAVE      &trans        &trans         &trans        &trans         &kp LS(STAR)  &kp N1   &kp N2  &kp N3  &kp LS(PLUS)
-                             &trans         &trans        &trans         &kp N0        &kp DOT  &trans
+&none          &none         &trans         &trans        &trans         &kp N0        &kp DOT  &trans  &none   &none
             >;
 
             label = "nums";
@@ -436,10 +436,10 @@ combo_##NAME { \
 
         NAV_LAYER {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PG_DN        &kp PG_UP    &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
-                &trans  &trans  &trans  &trans    &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &kp HOME   &kp PG_DN        &kp PG_UP    &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans     &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
+&none   &none   &trans  &trans  &trans  &trans     &trans           &trans       &none      &none
             >;
 
             label = "navi";
@@ -450,7 +450,7 @@ combo_##NAME { \
 &trans    &trans    &trans     &trans     &trans  &trans  &trans     &trans     &trans    &trans
 &sk LGUI  &sk LALT  &sk LCTRL  &sk LSHFT  &trans  &trans  &sk RSHFT  &sk RCTRL  &sk RALT  &sk RGUI
 &trans    &trans    &trans     &trans     &trans  &trans  &trans     &trans     &trans    &trans
-                    &trans     &trans     &trans  &trans  &trans     &trans
+&none     &none     &trans     &trans     &trans  &trans  &trans     &trans     &none     &none
             >;
 
             label = "mods";
@@ -461,7 +461,7 @@ combo_##NAME { \
 &bootloader  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans      &bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans  &trans  &trans
 &trans       &trans  &trans  &trans      &bt BT_SEL 2  &trans        &trans  &trans  &trans  &trans
-                     &trans  &trans      &trans        &trans        &trans  &trans
+&none        &none   &trans  &trans      &trans        &trans        &trans  &trans  &none   &none
             >;
 
             label = "sett";

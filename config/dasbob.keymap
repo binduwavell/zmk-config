@@ -62,11 +62,15 @@ combo_##NAME { \
             compatible = "zmk,behavior-hold-tap";
             label = "quick balanced layer tap";
             #binding-cells = <2>;
+
             // flavor = "balanced";
+
             flavor = "tap-preferred";
             tapping-term-ms = <180>;
             quick-tap-ms = <100>;
+
             // hold-while-undecided;
+
             bindings = <&mo>, <&kp>;
         };
 
@@ -197,6 +201,11 @@ combo_##NAME { \
         combo_c {
             bindings = <&kp C>;
             key-positions = <2 12>;
+        };
+
+        combo_ch2 {
+            bindings = <&ch>;
+            key-positions = <2 12 16>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

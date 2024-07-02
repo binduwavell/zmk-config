@@ -66,12 +66,14 @@ combo_##NAME { \
             // flavor = "balanced";
 
             flavor = "balanced";
-            tapping-term-ms = <220>;
+            tapping-term-ms = <250>;
             quick-tap-ms = <100>;
 
             // hold-while-undecided;
 
             bindings = <&mo>, <&kp>;
+
+            hold-trigger-on-release;
         };
 
         qbmt: quick_balanced_mod_tap {

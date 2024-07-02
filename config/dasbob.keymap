@@ -131,6 +131,7 @@ combo_##NAME { \
         combo_wh {
             bindings = <&wh>;
             key-positions = <1 16>;
+            timeout-ms = <60>;
         };
 
         combo_th {
@@ -156,6 +157,7 @@ combo_##NAME { \
         combo_ck {
             bindings = <&ck>;
             key-positions = <16 2>;
+            timeout-ms = <55>;
         };
 
         combo_gh {
@@ -166,6 +168,7 @@ combo_##NAME { \
         combo_ou {
             bindings = <&ou>;
             key-positions = <19 18>;
+            timeout-ms = <60>;
         };
 
         combo_ess {
@@ -206,6 +209,7 @@ combo_##NAME { \
         combo_ch2 {
             bindings = <&ch>;
             key-positions = <2 12 16>;
+            timeout-ms = <60>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

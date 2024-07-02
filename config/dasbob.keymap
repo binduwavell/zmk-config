@@ -66,7 +66,7 @@ combo_##NAME { \
             // flavor = "balanced";
 
             flavor = "tap-preferred";
-            tapping-term-ms = <180>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <100>;
 
             // hold-while-undecided;

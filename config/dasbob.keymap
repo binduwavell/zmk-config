@@ -60,12 +60,12 @@ combo_##NAME { \
 
         qlt: quick_layer_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "quick balanced layer tap";
+            label = "quick layer tap";
             #binding-cells = <2>;
 
             // flavor = "balanced";
 
-            flavor = "tap-preferred";
+            flavor = "balanced";
             tapping-term-ms = <220>;
             quick-tap-ms = <100>;
 

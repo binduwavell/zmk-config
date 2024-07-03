@@ -433,7 +433,7 @@ combo_##NAME { \
         ALPHA2_LAYER {
             bindings = <
 &kp Q      &kp ESC    &kp LC(B)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
-&kp TAB    &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp ENTER
+&kp LC(A)  &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp GRAVE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
 &none      &none      &trans     &trans  &kp BACKSPACE  &trans  &trans  &trans          &none            &none
             >;

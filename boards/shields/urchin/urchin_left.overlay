@@ -6,7 +6,7 @@
 
 #include "urchin.dtsi"
 
-&deault_kscan {
+&default_kscan {
     diode-direction = "col2row";
     col-gpios
         = <&pro_micro 18 (GPIO_ACTIVE_HIGH)> // COL0

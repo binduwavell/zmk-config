@@ -73,17 +73,6 @@ combo_##NAME { \
 
             bindings = <&mo>, <&kp>;
         };
-
-        qbmt: quick_balanced_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "quick balanced mod tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <100>;
-            hold-while-undecided;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     combos {
@@ -419,10 +408,10 @@ combo_##NAME { \
 
         ALPHA1_LAYER {
             bindings = <
-&qu    &kp W  &kp F             &kp P  &kp B                  &kp J         &kp L  &kp U             &kp Y    &kp SEMI
-&kp A  &kp R  &kp S             &kp T  &kp G                  &kp M         &kp N  &kp E             &kp I    &kp O
-&kp Z  &kp X  &kp C             &kp D  &kp V                  &kp K         &kp H  &kp COMMA         &kp DOT  &kp FSLH
-&none  &none  &kp LEFT_CONTROL  &mo 2  &qbmt LSHFT BACKSPACE  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none    &none
+&qu    &kp W  &kp F             &kp P  &kp B      &kp J         &kp L  &kp U             &kp Y    &kp SEMI
+&kp A  &kp R  &kp S             &kp T  &kp G      &kp M         &kp N  &kp E             &kp I    &kp O
+&kp Z  &kp X  &kp C             &kp D  &kp V      &kp K         &kp H  &kp COMMA         &kp DOT  &kp FSLH
+&none  &none  &kp LEFT_CONTROL  &mo 2  &kp LSHFT  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none    &none
             >;
 
             label = "alp1";

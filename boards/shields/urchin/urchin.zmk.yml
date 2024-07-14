@@ -8,4 +8,5 @@ features:
   - keys
 siblings:
   - urchin_left
+  - urchin_central
   - urchin_right

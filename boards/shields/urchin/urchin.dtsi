@@ -9,7 +9,7 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,kscan = &default_kscan;
         zmk,matrix_transform = &default_transform;
     };
 
@@ -26,9 +26,16 @@
         >;
     };
 
-    kscan0: kscan {        
+    default_kscan: kscan_0 {        
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN0";
         wakeup-source;
+    };
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
     };
 };

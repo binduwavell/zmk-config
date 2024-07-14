@@ -7,7 +7,7 @@
     };
 };
 
-/delete-node/ &kscan0;
+/delete-node/ &default_kscan;
 
 /*
 &xiao_i2c {

@@ -126,7 +126,7 @@ combo_##NAME { \
         combo_wh {
             bindings = <&wh>;
             key-positions = <1 16>;
-            timeout-ms = <60>;
+            timeout-ms = <65>;
         };
 
         combo_th {
@@ -142,6 +142,7 @@ combo_##NAME { \
         combo_ch {
             bindings = <&ch>;
             key-positions = <22 16>;
+            timeout-ms = <65>;
         };
 
         combo_sh {
@@ -152,23 +153,25 @@ combo_##NAME { \
         combo_ck {
             bindings = <&ck>;
             key-positions = <16 2>;
-            timeout-ms = <55>;
+            timeout-ms = <65>;
         };
 
         combo_gh {
             bindings = <&gh>;
             key-positions = <16 13>;
+            timeout-ms = <60>;
         };
 
         combo_ou {
             bindings = <&ou>;
             key-positions = <19 18>;
-            timeout-ms = <60>;
+            timeout-ms = <65>;
         };
 
         combo_ess {
             bindings = <&ess>;
             key-positions = <12 17>;
+            timeout-ms = <60>;
         };
 
         combo_est {
@@ -179,16 +182,19 @@ combo_##NAME { \
         combo_ist {
             bindings = <&ist>;
             key-positions = <13 18>;
+            timeout-ms = <60>;
         };
 
         combo_able {
             bindings = <&able>;
             key-positions = <10 13>;
+            timeout-ms = <45>;
         };
 
         comb_ion {
             bindings = <&ion>;
             key-positions = <18 16>;
+            timeout-ms = <55>;
         };
 
         combo_mods {

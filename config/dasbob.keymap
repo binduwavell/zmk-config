@@ -434,7 +434,7 @@ combo_##NAME { \
 &kp Q      &kp ESC    &kp LC(B)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
 &kp LC(A)  &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp GRAVE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
-&none      &none      &trans     &trans  &kp BACKSPACE  &trans  &trans  &trans          &none            &none
+&none      &none      &trans     &tog 2  &kp BACKSPACE  &trans  &tog 3  &trans          &none            &none
             >;
 
             label = "alp2";
@@ -444,8 +444,8 @@ combo_##NAME { \
             bindings = <
 &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp FSLH      &kp N7   &kp N8  &kp N9  &kp MINUS
 &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)   &kp EQUAL     &kp N4   &kp N5  &kp N6  &kp LS(UNDER)
-&kp GRAVE      &trans        &trans         &trans        &trans         &kp LS(STAR)  &kp N1   &kp N2  &kp N3  &kp LS(PLUS)
-&none          &none         &trans         &trans        &trans         &kp N0        &kp DOT  &tog 2  &none   &none
+&trans         &trans        &trans         &trans        &trans         &kp LS(STAR)  &kp N1   &kp N2  &kp N3  &kp LS(PLUS)
+&none          &none         &trans         &trans        &trans         &kp N0        &kp DOT  &trans  &none   &none
             >;
 
             label = "nums";
@@ -456,7 +456,7 @@ combo_##NAME { \
 &trans    &trans    &trans     &trans     &trans  &kp HOME  &kp PG_DN        &kp PG_UP    &kp END    &trans
 &kp LCMD  &kp LALT  &kp LCTRL  &kp LSHFT  &trans  &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
 &trans    &trans    &trans     &trans     &trans  &trans    &kp LS(LC(TAB))  &kp LC(TAB)  &trans     &trans
-&none     &none     &tog 3     &trans     &trans  &trans    &trans           &trans       &none      &none
+&none     &none     &trans     &trans     &trans  &trans    &trans           &trans       &none      &none
             >;
 
             label = "navi";

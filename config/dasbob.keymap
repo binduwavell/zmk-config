@@ -111,90 +111,106 @@ combo_##NAME { \
         combo_capsword {
             bindings = <&caps_word>;
             key-positions = <22 21>;
+            layers = <0>;
         };
 
         combo_enter {
             bindings = <&kp ENTER>;
             key-positions = <27 26>;
+            layers = <0>;
         };
 
         combo_quote {
             bindings = <&kp APOS>;
             key-positions = <8 7>;
+            layers = <0>;
         };
 
         combo_wh {
             bindings = <&wh>;
             key-positions = <1 16>;
             timeout-ms = <65>;
+            layers = <0>;
         };
 
         combo_th {
             bindings = <&th>;
             key-positions = <12 13>;
+            layers = <0>;
         };
 
         combo_ing {
             bindings = <&ing>;
             key-positions = <18 17>;
+            layers = <0>;
         };
 
         combo_ch {
             bindings = <&ch>;
             key-positions = <22 16>;
             timeout-ms = <65>;
+            layers = <0>;
         };
 
         combo_sh {
             bindings = <&sh>;
             key-positions = <16 12>;
+            layers = <0>;
         };
 
         combo_ck {
             bindings = <&ck>;
             key-positions = <16 2>;
             timeout-ms = <65>;
+            layers = <0>;
         };
 
         combo_gh {
             bindings = <&gh>;
             key-positions = <16 13>;
             timeout-ms = <60>;
+            layers = <0>;
         };
 
         combo_ou {
             bindings = <&ou>;
             key-positions = <19 18>;
-            timeout-ms = <65>;
+            timeout-ms = <45>;
+            layers = <0>;
         };
 
         combo_ess {
             bindings = <&ess>;
             key-positions = <12 17>;
             timeout-ms = <60>;
+            layers = <0>;
         };
 
         combo_est {
             bindings = <&est>;
             key-positions = <13 17>;
+            layers = <0>;
         };
 
         combo_ist {
             bindings = <&ist>;
             key-positions = <13 18>;
             timeout-ms = <60>;
+            layers = <0>;
         };
 
         combo_able {
             bindings = <&able>;
             key-positions = <10 13>;
-            timeout-ms = <45>;
+            timeout-ms = <35>;
+            layers = <0>;
         };
 
         comb_ion {
             bindings = <&ion>;
             key-positions = <18 16>;
-            timeout-ms = <55>;
+            timeout-ms = <35>;
+            layers = <0>;
         };
 
         combo_mods {
@@ -205,12 +221,14 @@ combo_##NAME { \
         combo_c {
             bindings = <&kp C>;
             key-positions = <2 12>;
+            layers = <0>;
         };
 
         combo_ch2 {
             bindings = <&ch>;
             key-positions = <2 12 16>;
             timeout-ms = <60>;
+            layers = <0>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

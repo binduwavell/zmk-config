@@ -75,8 +75,6 @@ combo_##NAME { \
             //hold-while-undecided;
 
             bindings = <&mo>, <&kp>;
-
-            require-prior-idle-ms = <125>;
         };
     };
 

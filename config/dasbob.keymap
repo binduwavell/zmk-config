@@ -77,7 +77,6 @@ combo_##NAME { \
             bindings = <&mo>, <&kp>;
 
             require-prior-idle-ms = <125>;
-            retro-tap;
         };
     };
 

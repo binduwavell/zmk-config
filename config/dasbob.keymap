@@ -230,6 +230,16 @@ combo_##NAME { \
             layers = <0>;
         };
 
+        combo_repeat_left {
+            bindings = <&key_repeat>;
+            key-positions = <33 32>;
+        };
+
+        combo_repeat_right {
+            bindings = <&key_repeat>;
+            key-positions = <36 37>;
+        };
+
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)
         // COMBO(UML_AE, &kp SQT , 11 12, 0)
         // COMBO(UML_OE, &kp SEMI, 12 13, 0)
@@ -448,7 +458,7 @@ combo_##NAME { \
 
         ALPHA2_LAYER {
             bindings = <
-&kp Q      &kp ESC    &kp LC(B)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
+&kp Q      &kp ESC    &kp LC(Y)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
 &kp LC(A)  &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp GRAVE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
 &none      &none      &trans     &tog 2  &kp BACKSPACE  &trans  &tog 3  &trans          &none            &none

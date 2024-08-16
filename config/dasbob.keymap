@@ -142,13 +142,6 @@ combo_##NAME { \
             layers = <0>;
         };
 
-        combo_ch {
-            bindings = <&ch>;
-            key-positions = <22 16>;
-            timeout-ms = <65>;
-            layers = <0>;
-        };
-
         combo_sh {
             bindings = <&sh>;
             key-positions = <16 12>;
@@ -216,16 +209,9 @@ combo_##NAME { \
             key-positions = <34 35>;
         };
 
-        combo_c {
-            bindings = <&kp C>;
-            key-positions = <2 12>;
-            layers = <0>;
-            timeout-ms = <35>;
-        };
-
-        combo_ch2 {
+        combo_ch {
             bindings = <&ch>;
-            key-positions = <2 12 16>;
+            key-positions = <2 12>;
             timeout-ms = <65>;
             layers = <0>;
         };

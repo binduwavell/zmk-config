@@ -116,21 +116,6 @@
             key-positions = <18 16>;
         };
 
-        combo_ess {
-            bindings = <&ess>;
-            key-positions = <16 12>;
-        };
-
-        combo_est {
-            bindings = <&est>;
-            key-positions = <16 13>;
-        };
-
-        combo_ist {
-            bindings = <&ist>;
-            key-positions = <13 17>;
-        };
-
         combo_able {
             bindings = <&able>;
             key-positions = <10 13>;

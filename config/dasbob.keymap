@@ -170,26 +170,6 @@ combo_##NAME { \
             layers = <0>;
         };
 
-        combo_ess {
-            bindings = <&ess>;
-            key-positions = <12 17>;
-            timeout-ms = <60>;
-            layers = <0>;
-        };
-
-        combo_est {
-            bindings = <&est>;
-            key-positions = <13 17>;
-            layers = <0>;
-        };
-
-        combo_ist {
-            bindings = <&ist>;
-            key-positions = <13 18>;
-            timeout-ms = <60>;
-            layers = <0>;
-        };
-
         combo_able {
             bindings = <&able>;
             key-positions = <10 13>;
@@ -224,6 +204,46 @@ combo_##NAME { \
         combo_repeat_right {
             bindings = <&key_repeat>;
             key-positions = <36 37>;
+        };
+
+        combo_b {
+            bindings = <&kp B>;
+            key-positions = <1 11>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_v {
+            bindings = <&kp V>;
+            key-positions = <10 0>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_j {
+            bindings = <&kp J>;
+            key-positions = <8 18>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_k {
+            bindings = <&kp K>;
+            key-positions = <19 9>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_g {
+            bindings = <&kp G>;
+            key-positions = <3 13>;
+            timeout-ms = <50>;
+            layers = <0>;
+        };
+
+        combo_m {
+            bindings = <&kp M>;
+            key-positions = <16 6>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

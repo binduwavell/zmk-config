@@ -191,7 +191,7 @@ combo_##NAME { \
 
         combo_ch {
             bindings = <&ch>;
-            key-positions = <2 12>;
+            key-positions = <22 16>;
             timeout-ms = <65>;
             layers = <0>;
         };
@@ -208,28 +208,28 @@ combo_##NAME { \
 
         combo_b {
             bindings = <&kp B>;
-            key-positions = <1 11>;
+            key-positions = <2 12>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_v {
             bindings = <&kp V>;
-            key-positions = <10 0>;
+            key-positions = <1 11>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_j {
             bindings = <&kp J>;
-            key-positions = <8 18>;
+            key-positions = <7 17>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
         combo_k {
             bindings = <&kp K>;
-            key-positions = <19 9>;
+            key-positions = <8 18>;
             timeout-ms = <50>;
             layers = <0>;
         };

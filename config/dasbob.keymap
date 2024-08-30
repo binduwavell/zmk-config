@@ -244,6 +244,7 @@ combo_##NAME { \
         combo_m {
             bindings = <&kp M>;
             key-positions = <16 6>;
+            layers = <0>;
         };
 
         // COMBO(shiftablesch, &macro_shiftable_sch, 17 18, 0)

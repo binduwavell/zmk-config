@@ -76,6 +76,24 @@ combo_##NAME { \
 
             bindings = <&mo>, <&kp>;
         };
+
+        dot_colon: dot_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Dot shifted to colon";
+            bindings = <&kp PERIOD>, <&kp COLON>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_semi: comma_semi {
+            compatible = "zmk,behavior-mod-morph";
+            label = "Comma shifted to semicolon";
+            bindings = <&kp COMMA>, <&kp SEMI>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -460,10 +478,10 @@ combo_##NAME { \
 
         ALPHA1_LAYER {
             bindings = <
-&qu    &kp W  &kp F             &kp P  &kp B      &kp J         &kp L  &kp U             &kp Y    &kp SEMI
-&kp A  &kp R  &kp S             &kp T  &kp G      &kp M         &kp N  &kp E             &kp I    &kp O
-&kp Z  &kp X  &kp C             &kp D  &kp V      &kp K         &kp H  &kp COMMA         &kp DOT  &kp FSLH
-&none  &none  &kp LEFT_CONTROL  &mo 2  &sk LSHFT  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none    &none
+&qu    &kp W  &kp F             &kp P  &kp B      &kp J         &kp L  &kp U             &kp Y       &kp APOSTROPHE
+&kp A  &kp R  &kp S             &kp T  &kp G      &kp M         &kp N  &kp E             &kp I       &kp O
+&kp Z  &kp X  &kp C             &kp D  &kp V      &kp K         &kp H  &comma_semi       &dot_colon  &kp FSLH
+&none  &none  &kp LEFT_CONTROL  &mo 2  &sk LSHFT  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none       &none
             >;
 
             label = "alp1";
@@ -471,10 +489,10 @@ combo_##NAME { \
 
         ALPHA2_LAYER {
             bindings = <
-&kp Q      &kp ESC    &kp LC(Y)  &kp B   &trans         &trans  &kp J   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp APOS
-&kp LC(A)  &trans     &kp LC(V)  &kp G   &trans         &trans  &kp M   &kp LPAR        &kp RPAR         &kp GRAVE
-&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp V   &trans         &trans  &kp K   &kp LBKT        &kp RBKT         &kp BSLH
-&none      &none      &trans     &tog 2  &kp BACKSPACE  &trans  &tog 3  &trans          &none            &none
+&kp Q      &kp ESC    &kp LC(F)  &kp LC(P)  &trans         &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LC(A)  &trans     &trans     &kp LC(E)  &trans         &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE         &kp GRAVE
+&kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans         &trans  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp BSLH
+&none      &none      &trans     &tog 2     &kp BACKSPACE  &trans  &tog 3                &trans                 &none             &none
             >;
 
             label = "alp2";
@@ -517,7 +535,7 @@ combo_##NAME { \
             bindings = <
 &bootloader  &trans  &trans        &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans  &trans  &bootloader
 &trans       &trans  &out OUT_TOG  &out OUT_BLE  &bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans  &trans  &trans
-&trans       &trans  &trans        &out OUT_USB  &bt BT_SEL 2  &trans        &trans  &trans  &trans  &trans
+&soft_off    &trans  &trans        &out OUT_USB  &bt BT_SEL 2  &trans        &trans  &trans  &trans  &soft_off
 &none        &none   &trans        &trans        &trans        &trans        &trans  &trans  &none   &none
             >;
 

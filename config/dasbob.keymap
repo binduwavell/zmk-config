@@ -463,7 +463,7 @@ combo_##NAME { \
 &qu    &kp W  &kp F             &kp P  &kp B      &kp J         &kp L  &kp U             &kp Y    &kp SEMI
 &kp A  &kp R  &kp S             &kp T  &kp G      &kp M         &kp N  &kp E             &kp I    &kp O
 &kp Z  &kp X  &kp C             &kp D  &kp V      &kp K         &kp H  &kp COMMA         &kp DOT  &kp FSLH
-&none  &none  &kp LEFT_CONTROL  &mo 2  &kp LSHFT  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none    &none
+&none  &none  &kp LEFT_CONTROL  &mo 2  &sk LSHFT  &qlt 1 SPACE  &mo 3  &kp LEFT_COMMAND  &none    &none
             >;
 
             label = "alp1";

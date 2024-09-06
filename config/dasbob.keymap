@@ -490,7 +490,7 @@ combo_##NAME { \
         ALPHA2_LAYER {
             bindings = <
 &kp Q      &kp ESC    &kp LC(F)  &kp LC(P)  &trans         &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp LC(A)  &trans     &trans     &kp LC(E)  &trans         &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE         &kp GRAVE
+&kp LC(A)  &kp LC(R)  &trans     &kp LC(E)  &trans         &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE         &kp GRAVE
 &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &trans         &trans  &kp LESS_THAN         &kp GREATER_THAN       &kp EQUAL         &kp BSLH
 &none      &none      &trans     &tog 2     &kp BACKSPACE  &trans  &tog 3                &trans                 &none             &none
             >;
